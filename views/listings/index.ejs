@@ -1,13 +1,48 @@
-<% layout("/layouts/boilerplate.ejs") %> 
+<% layout("/layouts/boilerplate.ejs") %>
 <body>
-  <h3>All Listings</h3>
+  <style>
+    #filters {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .filter {
+      text-align: center;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    .filter:hover {
+      opacity: 1;
+    }
+
+    .filter p {
+      font-size: 0.8rem;
+    }
+  </style>
+
+  <div id="filters">
+    <div class="filter">
+      <div>
+        <i class="fa-solid fa-fire"></i>
+        <p>Trending</p>
+      </div>
+    </div>
+    <div class="filter">
+      <div>
+        <i class="fa-solid fa-fire"></i>
+        <p>Trending</p>
+      </div>
+    </div>
+  </div>
 
   <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
     <% for(let listing of allListings) {%>
     <a href="/listings/<%= listing._id %>" class="listing-link">
       <div class="card col listing-card">
         <img
-          src="<%= listing.image.url %>>"
+          src="<%= listing.image.url %>"
           class="card-img-top"
           alt="listing_image"
           style="height: 20rem"
