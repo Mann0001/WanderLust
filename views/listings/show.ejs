@@ -27,8 +27,8 @@
 
   <br />
 
-  <% if(currUser && listing.owner && currUser._id.equals(listing.owner._id)) {
-  %>
+  <% if(currUser && listing.owner && currUser._id.equals(listing.owner._id) ||
+  currUser.isAdmin) { %>
 
   <div>
     <div class="btns offset-3">
