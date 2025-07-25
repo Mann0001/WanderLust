@@ -1,50 +1,11 @@
-<style>
-  .btn-search {
-    background-color: #fe424d;
-    color: #fff;
-    border-radius: 50%;
-    height: 43px;
-    width: 43px;
-  }
-
-  .btn-search:hover {
-    background-color: #fe424d;
-    color: #fff;
-  }
-
-  .search-wrapper {
-    position: relative;
-    width: 20rem;
-  }
-
-  .search-wrapper input {
-    padding-right: 40px;
-    border-radius: 29px;
-    height: 54px;
-  }
-
-  .search-wrapper button {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    border: none;
-    padding: 0;
-    font-size: 1rem;
-  }
-
-  .navbar-collapse {
-    background-color: #fff;
-  }
-</style>
-
+<% if (showHeaderFooter) { %>
 <nav
   class="navbar navbar-expand-md bg-body-light border-bottom sticky-top mb-3"
 >
   <div class="container-fluid">
-    <a class="navbar-brand" href="/listings"
-      ><i class="fa-regular fa-compass"></i
-    ></a>
+    <div class="d-block d-md-none navbar-brand">
+      <a href="/listings"><h3>WanderLust</h3></a>
+    </div>
     <button
       class="navbar-toggler"
       type="button"
@@ -55,12 +16,15 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+      <div class="navbar-nav d-flex align-items-center mb-2">
+        <a class="nav-link d-flex align-items-center gap-2" href="/listings">
+          <i class="fa-regular fa-compass me-2"></i>
+          <span>Explore</span>
+        </a>
       </div>
 
       <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search">
+        <form class="d-flex justify-content-center mb-2" role="search">
           <div class="search-wrapper">
             <input
               class="form-control"
@@ -74,15 +38,27 @@
         </form>
       </div>
 
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Become a host</a>
+      <div class="navbar-nav ms-auto d-flex align-items-center">
+        <a class="nav-link underline-hover" href="/listings/new"
+          >Become a host</a
+        >
         <% if(!currUser) {%>
-        <a class="nav-link" href="/signup"><b>Signup</b></a>
         <a class="nav-link" href="/login"><b>Login</b></a>
+        <a
+          class="btn btn-outline-danger btn-signup d-none d-md-block"
+          href="/signup"
+          ><b>Signup</b></a
+        >
+        <a
+          class="btn btn-outline-danger btn-signup d-md-none mb-3"
+          href="/signup"
+          ><b>Signup</b></a
+        >
         <% } %> <% if(currUser) {%>
-        <a class="nav-link" href="/logout"><b>Log out</b></a>
+        <a class="nav-link underline-hover" href="/logout"><b>Log out</b></a>
         <% } %>
       </div>
     </div>
   </div>
 </nav>
+<% } %>
