@@ -1,39 +1,36 @@
 # 🌍 Wanderlust
 
-**Wanderlust** is a modern travel website that lets you explore breathtaking destinations, plan your trips effortlessly, and share your travel experiences with the world.
+**Live Demo:** [Your Link Here]
+
+**Tech Stack:** Node.js, Express.js, MongoDB, EJS, Bootstrap
 
 ---
 
-## ✨ Features
+## ✨ Overview
 
-- Discover and search for amazing travel destinations  
-- Create personalized trip itineraries  
+Wanderlust is a full-stack travel website that allows users to explore, share, and manage travel destinations. Users can sign up, create posts about destinations, and enjoy a responsive and interactive UI.
+
+---
+
+## 🛠️ Features
+
 - User authentication and profile management  
-- Responsive design for seamless experience on desktop and mobile  
-- Engaging UI with smooth navigation  
+- Dynamic routing and CRUD operations for destination posts  
+- Responsive design with Bootstrap and EJS templating  
+- Image upload functionality with Multer and Cloudinary  
+- Smooth navigation and interactive UI for a seamless user experience  
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Highlights
 
-- **Frontend:** HTML, CSS, JavaScript, React  
-- **Backend:** Node.js, Express (if applicable)  
-- **Database:** MongoDB / Firebase (if applicable)  
-- **Deployment:** Vercel / Netlify (if deployed)
-
----
-
-## 📸 Demo / Screenshots
-
-![Homepage](link-to-screenshot.png)  
-![Destination Page](link-to-screenshot.png)  
-
-Or check out the **live demo:** [Wanderlust Website](https://yourwebsite.com)
+- Built using Node.js and Express.js for backend logic  
+- MongoDB database integration for storing user and destination data  
+- Secure and scalable architecture  
+- Clean, modern UI using Bootstrap and EJS templates  
 
 ---
 
-## 🚀 Getting Started
+## 👤 Author
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/wanderlust.git
+Created by **Your Name** – [GitHub](https://github.com/yourusername)
