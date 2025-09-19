@@ -1,6 +1,6 @@
 # 🌍 Wanderlust
 
-**Live Demo:** [Your Link Here]
+**Live Demo:** [Live Link](https://wanderlust-project-855v.onrender.com/listings)
 
 **Tech Stack:** Node.js, Express.js, MongoDB, EJS, Bootstrap
 
@@ -33,4 +33,4 @@ Wanderlust is a full-stack travel website that allows users to explore, share, a
 
 ## 👤 Author
 
-Created by **Your Name** – [GitHub](https://github.com/yourusername)
+Created by **Your Name** – [GitHub](https://github.com/Mann0001)
