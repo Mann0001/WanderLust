@@ -33,4 +33,4 @@ Wanderlust is a full-stack travel website that allows users to explore, share, a
 
 ## 👤 Author
 
-Created by **Your Name** – [GitHub](https://github.com/Mann0001)
+Created by **Manmeet Singh** – [GitHub](https://github.com/Mann0001)
