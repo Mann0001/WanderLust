@@ -1,6 +1,6 @@
 # 🌍 Wanderlust
 
-**Live Demo:** [Live Link](https://wanderlust-project-855v.onrender.com/listings)
+**Live Demo:** [Live Link](https://wanderlust-1pmn.onrender.com/listings)
 
 **Tech Stack:** Node.js, Express.js, MongoDB, EJS, Bootstrap
 
