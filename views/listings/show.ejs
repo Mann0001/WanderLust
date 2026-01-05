@@ -29,6 +29,7 @@
 
   <% if (
     currUser &&
+    listing.owner &&
     (currUser._id.equals(listing.owner._id) || currUser.isAdmin)
 ) { %>
 
